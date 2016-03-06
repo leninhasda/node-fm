@@ -1,0 +1,83 @@
+html, body {
+    position: relative; height: 100%;
+    overflow: hidden;
+}
+a,
+a:hover {
+    color: #5a5a5a;
+    text-decoration: none;
+}
+.lh-main-menu { 
+    min-height: initial !important; margin-bottom: 0; border:0; border-bottom: 1px solid #ccc; background: #f3f3f3;
+    height: initial !important;
+}
+.lh-main-menu .nav li a { 
+    padding: 5px 12px; color: #5a5a5a; border-bottom: 2px solid transparent;
+}
+.lh-main-menu .nav li.active a { 
+    border-color: #3e82f7;
+}
+.lh-main-menu .nav li a:hover { 
+    border-color: #3e82f7;
+}
+.lh-toolbar { 
+    min-height: initial !important; border: 0; margin: 0; background: #f3f3f3; border-bottom: 1px solid #ccc;
+    height: initial !important;
+}
+.lh-toolbar .nav li a { 
+    color: #5a5a5a;
+}
+.lh-side-panel {
+    background: #f3f3f3; border-right: 1px solid #ccc;
+    padding: 0;
+    /*height: 100vh !important; // TODO remove important*/
+    position: relative;
+    /*height: 100% !important;*/
+    height: calc(100vh - 80px);
+}
+.lh-side-panel .nav-sidebar {
+}
+.lh-side-panel .nav-sidebar li {
+    width: 100%;
+}
+.lh-side-panel i.fa {
+    padding-right: 15px
+}
+.lh-side-panel li.divider {
+    border-top: 1px solid #ccc;
+}
+/* content */
+.lh-main-content {
+    position: relative;
+    height: calc(100vh - 72px);
+}
+.lh-content-area {
+    /*overflow: scroll;*/
+}
+.lh-content-area .row > div {
+    border-right: 1px solid #ccc;
+    padding: 0;
+}
+.lh-content-area .row > div:last-child {
+    border-right: 0;
+}
+.lh-list,
+.lh-list li {
+    margin: 0; padding: 0;
+}
+.lh-list {
+    overflow-wrap: scroll;
+}
+.lh-list li {
+    list-style: none;
+    padding: 3px 15px;
+}
+.lh-list li:nth-child(even) {
+    background: rgba(96, 125, 139, 0.28);
+}
+.lh-list li:nth-child(odd) {
+    background: white;
+}
+.lh-list li a {
+    display: block;
+}
